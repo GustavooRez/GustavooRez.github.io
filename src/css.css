@@ -44,8 +44,13 @@
 /* o fundo da navbar ser transparente antes de rolar o site*/
 .navbar-transparent {
   background-color: transparent !important;
-
   transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-transparent {
+    background-color: black !important;
+  } 
 }
 
 /* Adiciona margin ao botao da navbar*/
