@@ -1,0 +1,620 @@
+/* Importar a fonte Comfortaa*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+/* Definições gerais do site*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+/* Classe geral de titulos */
+.titulo {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 2.4rem;
+  padding: 4% 0 2% 0;
+  margin: 0 !important;
+}
+
+/* Ajuste do tamanho da fonte e os paddings para até 767px*/
+@media only screen and (max-width: 767px) {
+  .titulo {
+    font-size: 2rem;
+    padding: 4% 0 2% 0;
+  }
+}
+
+/* Ajuste do tamanho da fonte e os paddings para até 425px*/
+@media only screen and (max-width: 425px) {
+  .titulo {
+    font-size: 1.8rem;
+    padding: 7% 0 2% 0;
+  }
+}
+
+/* Mover a navbar para a direita */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* o fundo da navbar ser transparente antes de rolar o site*/
+.navbar-transparent {
+  background-color: transparent !important;
+
+  transition: 0.5s all ease;
+}
+
+/* Adiciona margin ao botao da navbar*/
+
+.navbar-toggler {
+  margin: 2% 0 0 5%;
+}
+
+/* o fundo da navbar ser preta ao rolar o site*/
+.nav-black {
+  background-color: black !important;
+  transition: 0.5s all ease;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Icone fica no meio mobile*/
+  .navbar-brand {
+    text-align: center;
+  }
+
+  /* Itens da navbar ficam no meio*/
+  .navbar-nav {
+    text-align: center;
+    padding-top: 5%;
+  }
+}
+
+/* Definir o tamanho das imagens*/
+.navbar-brand img {
+  width: 10%;
+}
+
+/* Cor dos itens da navbar branco*/
+.nav-link {
+  color: white !important ;
+  font-size: 1rem;
+}
+
+/* O link da navbar aumentar ao passar o mouse*/
+.nav-link:hover {
+  font-size: 1.2rem;
+  transition: 0.3s all ease;
+}
+
+/* Fundo imagem principal */
+
+.fundo_header {
+  background: url("../img/fundo_2.png") no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+
+/* Texto da imagem principal*/
+.fundo_texto {
+  padding: 15% 0 5% 0;
+  text-align: center;
+  color: white;
+}
+
+/* Texto do header no fundo principal adicionando sombra*/
+.fundo_texto h1,
+h3 {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px black;
+}
+
+/* Fonte do texto h1 no header */
+.fundo_texto h1 {
+  font-size: 3.5rem;
+}
+
+/* Fonte do texto h3 no header */
+.fundo_texto h3 {
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  /* Padding no texto header*/
+  .fundo_texto {
+    padding: 45% 0 5% 0;
+  }
+
+  /* Fonte do texto h1 no header */
+  .fundo_texto h1 {
+    font-size: 2.3rem;
+  }
+
+  /* Fonte do texto h3 no header */
+  .fundo_texto h3 {
+    padding-top: 5%;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  /* Padding no texto header*/
+  .fundo_texto {
+    padding: 35% 0 5% 0;
+  }
+
+  /* Fonte do texto h1 no header */
+  .fundo_texto h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Fonte do texto h3 no header */
+  .fundo_texto h3 {
+    padding-top: 5%;
+    font-size: 1rem;
+  }
+}
+/* Sobre nós */
+
+/* Sobre nós geral, ajustando o grid coluna e o padding*/
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3% 5% 5% 5%;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+/* Sobre nós imagem com imagem flutuando pro lado direito, margin direita, tamanho igual a 70 e border radius*/
+.sobre img {
+  float: right;
+  margin-right: 10%;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Sobre nós paragrafo com flutuação pro lado esquerdo, padding e texto justificado*/
+.sobre p {
+  float: left;
+  padding: 2% 0% 0 5%;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Sobre nós com 1 coluna */
+  .sobre {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* Sobre nós imagem*/
+  .sobre img {
+    text-align: center;
+    float: none;
+    margin-right: 0%;
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  /* Sobre nós paragrafo*/
+  .sobre p {
+    float: none;
+    padding: 5% 0% 0 0%;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Sobre nós paragrafo*/
+  .sobre p {
+    float: none;
+    padding: 8% 1% 0 1%;
+    text-align: justify;
+  }
+}
+
+/* Display grid portfolio com 3 colunas*/
+.grid_portifolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+/* Classe Portfólio com fundo preto*/
+.portfolio {
+  background-color: black;
+  padding-bottom: 5%;
+}
+
+/* Imagem do portfólio com ajuste de altura*/
+.grid_portifolio img {
+  width: 95%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Overlay preto em cima da imagem do portfólio*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.5%;
+  right: 0;
+  height: 350px;
+  width: 95%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 549px) {
+  /* Grid com uma coluna */
+  .grid_portifolio {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  /* Grid com duas colunas */
+  .grid_portifolio {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Botão*/
+@media only screen and (min-width: 920px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* Container do portfólio*/
+.container_portfolio {
+  position: relative;
+}
+
+/* opacidade do overlay*/
+.container_portfolio:hover .overlay {
+  opacity: 0.9;
+}
+
+/* Titulo do overlay*/
+.portfolio_overlay_titulo {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  padding-top: 20%;
+  text-transform: uppercase;
+}
+
+/* Botão do Overlay */
+.botao_overlay_portfolio {
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* Botao Enviar*/
+.botao_enviar {
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: black;
+}
+
+/* Padding do Botão em baixo do portfólio*/
+.botao_portfolio {
+  padding: 2%;
+}
+
+/* Botão em baixo do portfólio*/
+.botao_portfolio button {
+  border-radius: 10px;
+  padding: 1%;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  transition: 0.5s all ease;
+}
+
+/* Hover do Botão em baixo do portfólio*/
+.botao_portfolio button:hover {
+  color: black;
+  border: 1px solid rgb(128, 123, 123);
+  background-color: white;
+  transition: 0.5s all ease;
+}
+
+/* Padding Botão do portfólio com cor invertida*/
+.botao_portfolio_branco {
+  padding: 2%;
+}
+
+/* Botão do portfólio com cor invertida*/
+.botao_portfolio_branco button {
+  border-radius: 10px;
+  padding: 1%;
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.5s all ease;
+}
+
+/* Hover do Botão do portfólio com cor invertida*/
+.botao_portfolio_branco button:hover {
+  color: white;
+  border: 1px solid rgb(128, 123, 123);
+  background-color: black;
+  transition: 0.5s all ease;
+}
+
+/* Cada imagem do Contato*/
+.contato img {
+  width: 50%;
+  text-align: center;
+}
+
+/* Alinhamento do centro do grupo do contato*/
+.contato {
+  text-align: center;
+}
+
+/* Paragrafo do contato */
+.contato p {
+  padding-top: 2%;
+  font-size: 1.3rem;
+}
+
+/* Tirar sublinhado do link geral*/
+a:link {
+  text-decoration: none;
+}
+
+/* Cor preta no paragrafo do contato*/
+.contato p {
+  color: black;
+}
+
+/* Grid do contato com 5 colunas*/
+.contato {
+  padding: 3% 2% 2% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 549px) {
+  /* Grid do contato com 1 coluna*/
+  .contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1100px) {
+  /* Grid do contato com 3 colunas*/
+  .contato {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Footer com 3 colunas, background preto e texto branco*/
+.footer {
+  color: white;
+  display: grid;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Padding do footer */
+.footer div {
+  padding: 12% 5% 8% 5%;
+}
+
+@media only screen and (max-width: 549px) {
+  /* Padding do footer */
+  .footer div {
+    padding: 10% 5% 0% 5%;
+  }
+}
+
+/* Logo do footer */
+.logo_footer {
+  width: 50%;
+}
+
+/* Padding do paragrafo do footer */
+.texto_footer p {
+  padding-top: 5%;
+}
+
+/* Cada paragrado do paragrafo do footer */
+.footer_infos p {
+  font-size: 0.9rem;
+  margin-bottom: 0 !important;
+  color: white;
+  align-self: center;
+  padding-left: 2%;
+}
+
+/* Cada imagem do paragrafo do footer */
+.footer_infos img {
+  width: 10%;
+  align-self: center;
+}
+
+/* Cada li do paragrafo do footer */
+.footer_infos li {
+  display: flex;
+  padding: 10px 10px 0 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  /*Padding do link do footer*/
+  .footer_infos {
+    padding: 1% 2% 0% 5%;
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+  /*Padding do link do footer*/
+  .footer_infos {
+    padding: 1% 2% 0% 5%;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 800px) {
+  /*Padding do link do footer*/
+  .footer_infos {
+    padding: 1% 2% 0% 5%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Grid do footer com 1 coluna*/
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Imagens SVG com ajuste de imagem*/
+.svg {
+  width: 100%;
+  margin-bottom: -1%;
+}
+
+@media only screen and (max-width: 380px) {
+  /*Ajuste do Margin bottom do SVG*/
+  .svg {
+    margin-bottom: -15%;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 425px) {
+  /*Ajuste do Margin bottom do SVG*/
+  .svg {
+    margin-bottom: -8%;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  /*Ajuste do Margin bottom do SVG*/
+  .svg {
+    margin-bottom: -6%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  /*Ajuste do Margin bottom do SVG*/
+  .svg {
+    margin-bottom: -4%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  /*Ajuste do Margin bottom do SVG*/
+  .svg {
+    margin-bottom: -3%;
+  }
+}
+
+/* Imagens SVG Cima*/
+.svg_invert {
+  width: 100%;
+  margin-top: -1%;
+}
+
+@media only screen and (max-width: 380px) {
+  /*Ajuste do Margin top do SVG cima*/
+  .svg_invert {
+    margin-top: -15%;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 425px) {
+  /*Ajuste do Margin top do SVG cima*/
+  .svg_invert {
+    margin-top: -8%;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  /*Ajuste do Margin top do SVG cima*/
+  .svg_invert {
+    margin-top: -6%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  /*Ajuste do Margin top do SVG cima*/
+  .svg_invert {
+    margin-top: -4%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  /*Ajuste do Margin top do SVG cima*/
+  .svg_invert {
+    margin-top: -3%;
+  }
+}
+
+/* Classe do conhecimento e ajuste de padding*/
+.conhecimento {
+  padding-top: 2%;
+  padding-left: 15% !important;
+  padding-right: 10% !important;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /* Ajuste de padding do conhecimento*/
+  .conhecimento {
+    padding-top: 5%;
+    padding-left: 1% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  /* Ajuste de padding do conhecimento*/
+  .conhecimento {
+    padding-left: 5% !important;
+  }
+}
+
+/* Ajuste do padding do LI do conhecimento*/
+.conhecimento li {
+  padding: 1% 0 0% 0;
+}
+
+/* Padding do carrossel */
+.carousel {
+  padding: 1% 5%;
+}
+
+/* Border Radius da imagem do carrossel*/
+.carousel-inner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Icone preto próximo*/
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Icone preto anterior*/
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+/* Tirar o Padding left do OL e UL*/
+ol,
+ul {
+  padding-left: 0rem !important;
+}
