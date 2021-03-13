@@ -31,7 +31,7 @@ window.onload = function () {
 $(".navbar-collapse a").click(function () {
   $(".navbar-collapse").collapse("hide");
 });
-b;
+;
 
 /* Função que inicia o carrossel*/
 $(".carousel").carousel();

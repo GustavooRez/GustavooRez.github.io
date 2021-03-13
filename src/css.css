@@ -19,6 +19,8 @@
   margin: 0 !important;
 }
 
+
+
 /* Ajuste do tamanho da fonte e os paddings para até 767px*/
 @media only screen and (max-width: 767px) {
   .titulo {
@@ -44,15 +46,16 @@
 /* o fundo da navbar ser transparente antes de rolar o site*/
 .navbar-transparent {
   background-color: transparent !important;
+
   transition: 0.5s all ease;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .navbar-transparent {
     background-color: black !important;
-  } 
-}
+  }
 
+}
 /* Adiciona margin ao botao da navbar*/
 
 .navbar-toggler {
@@ -87,6 +90,7 @@
 .nav-link {
   color: white !important ;
   font-size: 1rem;
+  text-shadow: 1px 1px 10px black;
 }
 
 /* O link da navbar aumentar ao passar o mouse*/
@@ -236,6 +240,10 @@ h3 {
   padding-bottom: 5%;
 }
 
+.portfolio_page p{
+  padding: 0 2% 0 2% !important;
+  text-align: justify;
+}
 /* Imagem do portfólio com ajuste de altura*/
 .grid_portifolio img {
   width: 95%;
@@ -355,6 +363,13 @@ h3 {
   border: 1px solid rgb(128, 123, 123);
   background-color: black;
   transition: 0.5s all ease;
+}
+
+/* Justificar o texto do experiências*/
+
+.experiencias p{
+  text-align: justify;
+  padding: 0 2% 0 2%;
 }
 
 /* Cada imagem do Contato*/
@@ -618,8 +633,3 @@ a:link {
   filter: invert(1);
 }
 
-/* Tirar o Padding left do OL e UL*/
-ol,
-ul {
-  padding-left: 0rem !important;
-}
