@@ -13,6 +13,11 @@
   font-family: "Comfortaa", cursive;
 }
 
+/* Retirar padding geral do ol, ul*/
+ol, ul {
+  padding-left: 0rem !important; 
+}
+
 /* Classe geral de titulos */
 .titulo {
   text-align: center;
@@ -377,7 +382,7 @@ h3 {
 
 /* Cada imagem do Contato*/
 .contato img {
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 
@@ -402,24 +407,34 @@ a:link {
   color: black;
 }
 
-/* Grid do contato com 5 colunas*/
+/* Grid do contato com 3 colunas*/
 .contato {
   padding: 3% 2% 2% 2%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 549px) {
-  /* Grid do contato com 1 coluna*/
+  /* Padding do contato*/
   .contato {
-    grid-template-columns: 1fr;
+    padding: 8% 2% 2% 2%;
   }
+
+  
+  /* Diminuir o tamanho das imagens*/
+  .contato img {
+    width: 40%;
+  }
+
 }
 
-@media only screen and (min-width: 550px) and (max-width: 1100px) {
-  /* Grid do contato com 3 colunas*/
-  .contato {
-    grid-template-columns: 1fr 1fr 1fr;
+@media only screen and (max-width: 549px) {
+  .contato_float_left{
+    float: left;
+  }
+
+  .contato_float_right{
+    float: right;
   }
 }
 
