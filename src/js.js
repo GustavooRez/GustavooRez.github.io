@@ -16,7 +16,6 @@ $(window).on("scroll", function () {
 
 window.onload = function () {
   const logo = document.getElementById("logo");
-  AOS.init();
 
   logo.addEventListener("mouseenter", (e) => {
     logo.setAttribute("src", "img/Logo_preta_tracobranco.png");
