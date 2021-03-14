@@ -636,3 +636,9 @@ a:link {
   filter: invert(1);
 }
 
+
+/* Animações */
+
+#sobre_page_initial, #portfolio, #contato, #sobre_page, #conhecimento, #portfolio_page, #experiencias {
+  transition: 1s all ease-in;
+}
